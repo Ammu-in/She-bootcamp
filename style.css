@@ -139,3 +139,24 @@ footer{
     background: #143D59;
     text-align: center;
 }
+.Slogan{
+    text-align: center;
+}
+#know-more{
+    display: none;
+}
+#name-validation{
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+#email-validation{
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+#password-validation{
+    color: red;
+    font-size: 14px;
+    display: none;
+}
