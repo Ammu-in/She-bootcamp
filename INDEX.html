@@ -7,6 +7,7 @@
     <title>Web Development Bootcamp</title>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Lobster|Patua+On&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -55,30 +56,37 @@
     </section>
     <section id="Slogan">
         <div class="container">
+            <div class="Slogan">
             <h2>Hurry up! and experience the journey with us!</h2>
             <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit , sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilium dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+        <button onclick="changecontent()">Know more</button>
+        <p id="know-more">Lorem ipsum dolor sit amet consectetur adipiscing elit , sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilium dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>    
         </div>
     </section>
     <section id="forms">;
         <div class="container">
-        <h4>Register Here</h4>
+        <h4 >Register Here</h4>
         </setion>
     <section id= "my-forms"> ;
         <div class="container">
-            <form style="text-align: center; justify-content: center;">
+            <form style="text-align: center; justify-content: center;" onsubmit="return validation()">
                 <div class="form-groups">
                     <label>Name</label>
-                    <input type="text">
+                    <input id="name-input" type="text">
+                    <p id="name-validation">Enter name</p>
                 </div>
                 <div class="form-groups">
                     <label>Email</label>
-                    <input type="email">
+                    <input id="email-input" type="email">
+                    <p id="email-validation">Email cannot be empty!</p>
                 </div>
                 <div class="form-groups">
-                    <label>Batch</label>
-                    <input type="text" name="password">
+                    <label>Password</label>
+                    <input id="password-input" type="text" name="password">
+                    <p id="password-validation">Enter password</p>
                 </div>
                 <div class="form-groups">
                 <input type="submit"></div>
